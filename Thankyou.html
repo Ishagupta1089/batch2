@@ -1,3 +1,10 @@
+Here is the **HTML code** for your **Thank You for Purchase** page. You can save this as `thankyou.html` and link to it from your `product1.html` or `product2.html` pages after a purchase.
+
+---
+
+### ✅ `thankyou.html`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,89 +19,56 @@
 </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simple Landing Page</title>
+  <title>Thank You for Your Purchase</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       margin: 0;
-      padding: 0;
-      background: #f0f4f8;
+    }
+    .box {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #0077cc;
+    }
+    p {
+      font-size: 18px;
       color: #333;
     }
-    header {
-      background-color: #0077cc;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      display: flex;
-      justify-content: space-around;
-      padding: 40px;
-      flex-wrap: wrap;
-    }
-    .product {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 300px;
-      margin: 20px;
-      padding: 20px;
-      text-align: center;
-      transition: 0.3s;
-    }
-    .product:hover {
-      transform: scale(1.02);
-    }
-    .product h2 {
-      margin: 0 0 10px;
-    }
-    .product p {
-      color: #555;
-    }
-    .buy-button {
+    a {
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 20px;
       padding: 10px 20px;
-      background: #0077cc;
+      background-color: #0077cc;
       color: white;
       text-decoration: none;
       border-radius: 8px;
-      transition: background 0.3s;
+      transition: 0.3s;
     }
-    .buy-button:hover {
-      background: #005fa3;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0077cc;
-      color: white;
+    a:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Isha's Store</h1>
-    <p>Find your perfect pick below</p>
-  </header>
-
-  <div class="container">
-    <div class="product">
-      <h2>Product 1: Minimalist Notebook</h2>
-      <p>A sleek, lightweight notebook to capture your thoughts anywhere.</p>
-      <a class="buy-button" href="product1.html">Buy Now</a>
-    </div>
-
-    <div class="product">
-      <h2>Product 2: Digital Planner</h2>
-      <p>Plan your days smartly with our digital, printable planner pack.</p>
-      <a class="buy-button" href="product2.html">Buy Now</a>
-    </div>
+  <div class="box">
+    <h1>Thank You! 🎉</h1>
+    <p>Your purchase was successful. We appreciate your support!</p>
+    <a href="index.html">Back to Home</a>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Isha's Store. All rights reserved.</p>
-  </footer>
 </body>
 </html>
+```
+
+---
+
+Let me know if you'd like help linking this to the product pages or want a version that automatically redirects after a few seconds!
